@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "SnakeCanvas.h"
+#import "SYSnakeCanvas.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet  SnakeCanvas *canvas;
+@property (weak, nonatomic) IBOutlet  SYSnakeCanvas *canvas;
 
 @end
 
@@ -25,7 +25,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
-  SnakeGame *game = [[SnakeGame alloc] initWithSize:self.canvas.frame.size];
+  SYSnakeGame *game = [[SYSnakeGame alloc] initWithSize:self.canvas.frame.size];
   [self.canvas setGame:game];
   [self.canvas startGame];
 }

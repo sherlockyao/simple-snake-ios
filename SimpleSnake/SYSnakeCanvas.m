@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Originate. All rights reserved.
 //
 
-#import "SnakeCanvas.h"
+#import "SYSnakeCanvas.h"
 
-@interface SnakeCanvas() {
-  SnakeGame *_game;
+@interface SYSnakeCanvas() {
+  SYSnakeGame *_game;
   NSTimer *_spinnerTimer;
 }
 
 @end
 
-@implementation SnakeCanvas
+@implementation SYSnakeCanvas
 
 #pragma mark - UIView Lifecycle
 
@@ -33,7 +33,7 @@
 
 #pragma mark - Public Methods
 
-- (void)setGame:(SnakeGame *)game
+- (void)setGame:(SYSnakeGame *)game
 {
   _game = game;
 }
@@ -43,6 +43,17 @@
   if (nil == _spinnerTimer) {
     _spinnerTimer = [NSTimer scheduledTimerWithTimeInterval:.15 target:self selector:@selector(update) userInfo:nil repeats:true];
   }
+}
+
+- (void)stopGame
+{
+  [_spinnerTimer invalidate];
+}
+
+- (void)restartGame
+{
+  [_game reset];
+  [self startGame];
 }
 
 #pragma mark - Private Methods

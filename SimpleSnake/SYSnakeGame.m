@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Originate. All rights reserved.
 //
 
-#import "SnakeGame.h"
+#import "SYSnakeGame.h"
 
 #define SNAKE_SIZE 6
 #define SNAKE_SPEED 5
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, MoveDirection) {
   RIGHT,
 };
 
-@interface SnakeGame() {
+@interface SYSnakeGame() {
   CGSize _size;
   CGPoint _head;
   CGPoint _tail;
@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, MoveDirection) {
 
 @end
 
-@implementation SnakeGame
+@implementation SYSnakeGame
 
 #pragma mark - Public Methods
 
@@ -45,9 +45,7 @@ typedef NS_ENUM(NSInteger, MoveDirection) {
     _size = size;
     _foodColor = [UIColor grayColor];
     _snakeColor = [UIColor blackColor];
-    [self createSnake];
-    [self createFood];
-    [self createDirections];
+    [self reset];
   }
   return self;
 }
@@ -85,6 +83,13 @@ typedef NS_ENUM(NSInteger, MoveDirection) {
     _currentDirection = _nextDirection;
   }
   [self move];
+}
+
+- (void)reset
+{
+  [self createSnake];
+  [self createFood];
+  [self createDirections];
 }
 
 - (NSArray *)getGraphicLines

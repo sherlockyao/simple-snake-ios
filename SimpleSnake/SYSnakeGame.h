@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SnakeGame : NSObject
+@interface SYSnakeGame : NSObject
 
 @property (nonatomic, strong) UIColor *foodColor;
 @property (nonatomic, strong) UIColor *snakeColor;
@@ -16,6 +16,7 @@
 - (id)initWithSize:(CGSize)size;
 - (void)needMoveTo:(CGPoint)point;
 - (void)update;
+- (void)reset;
 - (NSArray *)getGraphicLines;
 
 @end

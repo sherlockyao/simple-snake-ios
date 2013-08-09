@@ -18,8 +18,8 @@
 		1660F1B817B33215005928EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1660F1B717B33215005928EC /* Default-568h@2x.png */; };
 		1660F1BB17B33215005928EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F1BA17B33215005928EC /* ViewController.m */; };
 		1660F1BE17B33215005928EC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1660F1BC17B33215005928EC /* ViewController.xib */; };
-		1660F1C617B33588005928EC /* SnakeCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F1C517B33588005928EC /* SnakeCanvas.m */; };
-		16AF417A17B47821003FA960 /* SnakeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AF417917B47821003FA960 /* SnakeGame.m */; };
+		1660F1C617B33588005928EC /* SYSnakeCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F1C517B33588005928EC /* SYSnakeCanvas.m */; };
+		16AF417A17B47821003FA960 /* SYSnakeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AF417917B47821003FA960 /* SYSnakeGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,10 @@
 		1660F1B917B33215005928EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1660F1BA17B33215005928EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1660F1BD17B33215005928EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		1660F1C417B33588005928EC /* SnakeCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeCanvas.h; sourceTree = "<group>"; };
-		1660F1C517B33588005928EC /* SnakeCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeCanvas.m; sourceTree = "<group>"; };
-		16AF417817B47821003FA960 /* SnakeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeGame.h; sourceTree = "<group>"; };
-		16AF417917B47821003FA960 /* SnakeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeGame.m; sourceTree = "<group>"; };
+		1660F1C417B33588005928EC /* SYSnakeCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSnakeCanvas.h; sourceTree = "<group>"; };
+		1660F1C517B33588005928EC /* SYSnakeCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSnakeCanvas.m; sourceTree = "<group>"; };
+		16AF417817B47821003FA960 /* SYSnakeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSnakeGame.h; sourceTree = "<group>"; };
+		16AF417917B47821003FA960 /* SYSnakeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSnakeGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,10 @@
 				1660F1B917B33215005928EC /* ViewController.h */,
 				1660F1BA17B33215005928EC /* ViewController.m */,
 				1660F1BC17B33215005928EC /* ViewController.xib */,
-				1660F1C417B33588005928EC /* SnakeCanvas.h */,
-				1660F1C517B33588005928EC /* SnakeCanvas.m */,
-				16AF417817B47821003FA960 /* SnakeGame.h */,
-				16AF417917B47821003FA960 /* SnakeGame.m */,
+				1660F1C417B33588005928EC /* SYSnakeCanvas.h */,
+				1660F1C517B33588005928EC /* SYSnakeCanvas.m */,
+				16AF417817B47821003FA960 /* SYSnakeGame.h */,
+				16AF417917B47821003FA960 /* SYSnakeGame.m */,
 				1660F1A817B33215005928EC /* Supporting Files */,
 			);
 			path = SimpleSnake;
@@ -186,8 +186,8 @@
 				1660F1AE17B33215005928EC /* main.m in Sources */,
 				1660F1B217B33215005928EC /* AppDelegate.m in Sources */,
 				1660F1BB17B33215005928EC /* ViewController.m in Sources */,
-				1660F1C617B33588005928EC /* SnakeCanvas.m in Sources */,
-				16AF417A17B47821003FA960 /* SnakeGame.m in Sources */,
+				1660F1C617B33588005928EC /* SYSnakeCanvas.m in Sources */,
+				16AF417A17B47821003FA960 /* SYSnakeGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

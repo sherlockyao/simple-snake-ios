@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SnakeGame.h"
+#import "SYSnakeGame.h"
 
-@interface SnakeCanvas : UIView
+@interface SYSnakeCanvas : UIView
 
-- (void)setGame:(SnakeGame *)game;
+- (void)setGame:(SYSnakeGame *)game;
 - (void)startGame;
+- (void)stopGame;
+- (void)restartGame;
 
 @end
