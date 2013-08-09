@@ -25,7 +25,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
-  [self.canvas start];
+  SnakeGame *game = [[SnakeGame alloc] initWithSize:self.canvas.frame.size];
+  [self.canvas setGame:game];
+  [self.canvas startGame];
 }
 
 @end

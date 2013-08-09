@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SnakeGame.h"
 
 @interface SnakeCanvas : UIView
 
-- (void)start;
+- (void)setGame:(SnakeGame *)game;
+- (void)startGame;
 
 @end

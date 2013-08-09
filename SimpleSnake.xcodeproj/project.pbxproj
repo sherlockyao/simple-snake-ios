@@ -19,6 +19,7 @@
 		1660F1BB17B33215005928EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F1BA17B33215005928EC /* ViewController.m */; };
 		1660F1BE17B33215005928EC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1660F1BC17B33215005928EC /* ViewController.xib */; };
 		1660F1C617B33588005928EC /* SnakeCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F1C517B33588005928EC /* SnakeCanvas.m */; };
+		16AF417A17B47821003FA960 /* SnakeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AF417917B47821003FA960 /* SnakeGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		1660F1BD17B33215005928EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		1660F1C417B33588005928EC /* SnakeCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeCanvas.h; sourceTree = "<group>"; };
 		1660F1C517B33588005928EC /* SnakeCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeCanvas.m; sourceTree = "<group>"; };
+		16AF417817B47821003FA960 /* SnakeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeGame.h; sourceTree = "<group>"; };
+		16AF417917B47821003FA960 /* SnakeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				1660F1BC17B33215005928EC /* ViewController.xib */,
 				1660F1C417B33588005928EC /* SnakeCanvas.h */,
 				1660F1C517B33588005928EC /* SnakeCanvas.m */,
+				16AF417817B47821003FA960 /* SnakeGame.h */,
+				16AF417917B47821003FA960 /* SnakeGame.m */,
 				1660F1A817B33215005928EC /* Supporting Files */,
 			);
 			path = SimpleSnake;
@@ -182,6 +187,7 @@
 				1660F1B217B33215005928EC /* AppDelegate.m in Sources */,
 				1660F1BB17B33215005928EC /* ViewController.m in Sources */,
 				1660F1C617B33588005928EC /* SnakeCanvas.m in Sources */,
+				16AF417A17B47821003FA960 /* SnakeGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +310,7 @@
 				1660F1C317B33215005928EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
