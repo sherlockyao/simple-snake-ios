@@ -81,7 +81,9 @@ typedef NS_ENUM(NSInteger, Direction) {
 - (void)createFood
 {
   CGSize size = self.frame.size;
-  _food = CGPointMake(SNAKE_SIZE + arc4random() % ((int)size.width - 3 * SNAKE_SIZE), SNAKE_SIZE + arc4random() % ((int)size.height) - 3 * SNAKE_SIZE);
+  int xMax = (int)size.width - 3 * SNAKE_SIZE;
+  int yMax = (int)size.height - 3 * SNAKE_SIZE;
+  _food = CGPointMake(SNAKE_SIZE + rand() % xMax, SNAKE_SIZE + rand() % yMax);
 }
 
 - (void)drawScene
@@ -255,7 +257,7 @@ typedef NS_ENUM(NSInteger, Direction) {
 
 - (BOOL)isEatenFood
 {
-  return (fabs(_food.x - _head.x) <= SNAKE_SIZE / 2 && fabs(_food.y - _head.y) <= SNAKE_SIZE / 2);
+  return (fabs(_food.x - _head.x) < SNAKE_SIZE && fabs(_food.y - _head.y) < SNAKE_SIZE);
 }
 
 @end
